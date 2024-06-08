@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Rubik Glitch Pop';
+    src: url('RubikGlitchPop-Regular.eot');
+    src: url('RubikGlitchPop-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RubikGlitchPop-Regular.woff2') format('woff2'),
+        url('RubikGlitchPop-Regular.woff') format('woff'),
+        url('RubikGlitchPop-Regular.ttf') format('truetype'),
+        url('RubikGlitchPop-Regular.svg#RubikGlitchPop-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Workbench';
+    src: url('Workbench-Regular.eot');
+    src: url('Workbench-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Workbench-Regular.woff2') format('woff2'),
+        url('Workbench-Regular.woff') format('woff'),
+        url('Workbench-Regular.ttf') format('truetype'),
+        url('Workbench-Regular.svg#Workbench-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Workbench';
+    src: url('Workbench-Regular_1.eot');
+    src: url('Workbench-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('Workbench-Regular_1.woff2') format('woff2'),
+        url('Workbench-Regular_1.woff') format('woff'),
+        url('Workbench-Regular_1.ttf') format('truetype'),
+        url('Workbench-Regular_1.svg#Workbench-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Honk';
+    src: url('Honk-Regular.eot');
+    src: url('Honk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Honk-Regular.woff2') format('woff2'),
+        url('Honk-Regular.woff') format('woff'),
+        url('Honk-Regular.ttf') format('truetype'),
+        url('Honk-Regular.svg#Honk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mogilte';
+    src: url('Mogilte.eot');
+    src: url('Mogilte.eot?#iefix') format('embedded-opentype'),
+        url('Mogilte.woff2') format('woff2'),
+        url('Mogilte.woff') format('woff'),
+        url('Mogilte.ttf') format('truetype'),
+        url('Mogilte.svg#Mogilte') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Honk';
+    src: url('Honk-Regular_1.eot');
+    src: url('Honk-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('Honk-Regular_1.woff2') format('woff2'),
+        url('Honk-Regular_1.woff') format('woff'),
+        url('Honk-Regular_1.ttf') format('truetype'),
+        url('Honk-Regular_1.svg#Honk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

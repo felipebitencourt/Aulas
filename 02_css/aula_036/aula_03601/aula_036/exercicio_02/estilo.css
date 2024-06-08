@@ -1,0 +1,97 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+div{box-sizing: border-box;}
+
+.pai{
+    background-color: lightgreen;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+    /* padding: 20px; */
+    border: 3px solid black;
+}
+
+.filho{
+    background-color: coral;
+    border: 2px solid black;
+    padding: 5px;
+    /* height: 50px; */
+    /* width: 100px; */
+}
+
+#pai-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#pai-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#pai-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pai-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#pai-5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#pai-6{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#pai-7{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#pai-8{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#pai-9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pai-10{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pai-11{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#pai-12{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

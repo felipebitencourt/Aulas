@@ -1,0 +1,23 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+.sp{
+    background-color: aqua;
+}
+
+.sp1{
+    border: 5px solid red;
+    background-color: purple;
+    color: violet;
+}
+
+.sp2{
+    border: 5px dotted aqua;
+    background-color: coral;
+    border-radius: 20px;
+}

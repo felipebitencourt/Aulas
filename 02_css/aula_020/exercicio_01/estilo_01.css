@@ -1,0 +1,59 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1 {text-align: center;}
+
+div{
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#filho-1{
+    background-color: red;
+    width: 50%;
+}
+
+#filho-2{
+    background-color: green;
+    color: white;
+    width: 50vw;
+}
+
+#filho-3{
+    background-color: blue;
+    color: white;
+    width: 50vh;
+}
+
+#filho-4{
+    background-color: yellow;
+    width: 50vmin;
+}
+
+#filho-5{
+    background-color: orange;
+    width: 50vmax;
+}
+
+#filho-6{
+    background-color: pink;
+    width: 50em;
+}
+
+#filho-7{
+    background-color: purple;
+    color: white;
+    width: 50rem;
+}
+
+#filho-8{
+    background-color: cyan;
+    width: 50ch;
+}
+
+#filho-9{
+    background-color: brown;
+    color: white;
+    width: 50ex;
+}

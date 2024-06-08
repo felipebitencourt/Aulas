@@ -1,0 +1,61 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+}
+
+.pai{
+    border: 5px solid black;
+    background: linear-gradient(to bottom right, purple, darkblue, black);
+    color: white;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: grid;
+}
+
+.filho{
+    border: 1px solid black;
+    background-color: rgba(32, 178, 171, 0.5);
+}
+
+#pai-2{grid-template-columns: auto auto auto;}
+#pai-3{grid-template-columns: auto auto 50%;}
+#pai-4{grid-template-columns: 33.3% 33.3% 33.3%;}
+#pai-4 .filho-1{grid-column: 2 / 3;}
+#pai-5{grid-template-columns: 33.3% 33.3% 33.3%;}
+#pai-5 .filho-1{grid-column: 1 / 3;}
+#pai-6{grid-template-columns: 33.3% 33.3% 33.3%;}
+#pai-6 .filho-1{grid-row: 1 / 3;}
+#pai-06{grid-template-columns: 33.3% 33.3% 33.3%;}
+
+#pai-06 .filho-1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#pai-7{grid-template-columns: 33.3% 33.3% 33.3%;}
+
+#pai-7 .filho-1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#pai-8{
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+#pai-9{
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+#pai-9 .filho-1{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}

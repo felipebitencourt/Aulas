@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'dark souls';
+    src: url('../../../Fontes/dark_soul.otf') format('opentype'), url('../../../Fontes//darks_soul.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Old London';
+    src: url('../../../Fontes/Old_london.otf') format('opentype'), url('../../../Fontes/Old_London.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{text-align: center;}
+h1{font-family: 'Old London';}
+p{font-family: 'Inter';}

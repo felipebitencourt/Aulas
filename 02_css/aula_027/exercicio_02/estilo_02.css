@@ -1,0 +1,35 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+}
+
+h1{text-align: center;}
+
+fieldset{margin-top: 30px;}
+
+#fd-1{border: 2px dashed red;}
+
+#lg-1{
+    color: red;
+    text-align: center;
+}
+
+#fd-2{border: 10px double green;}
+
+#lg-2{
+    color: green;
+    text-align: right;
+    font-size: 50px;
+}
+
+#fd-3, #lg-3{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#lg-3{
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding: 5px 30px;
+}

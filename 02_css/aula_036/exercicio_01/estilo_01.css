@@ -1,0 +1,38 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+div{box-sizing: border-box;}
+
+.pai{
+    border: 2px solid black;
+    background-color: lightgreen;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.row{flex-direction: row;}
+.column{flex-direction: column;}
+
+.filho{
+    border: 2px solid black;
+    background-color: coral;
+    padding: 5px;
+}
+
+#pai-1, #pai-5{align-items: stretch;}
+#pai-2, #pai-6{align-items: flex-start;}
+#pai-3, #pai-7{align-items: flex-end;}
+#pai-4, #pai-8{align-items: center;}
+
+#pai-9{
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, purple, darkblue, black);
+}

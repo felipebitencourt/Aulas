@@ -1,0 +1,46 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 50px auto;
+    background-color: lightgreen;
+    text-align: justify;
+    padding: 15px;
+}
+
+#div-1{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#div-2{
+    box-shadow: -10px -10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#div-3{
+    box-shadow: 50px 50px 50px 0px rgba(255, 0, 0, 0.5);
+}
+
+#div-4{
+    box-shadow: 150px 150px 10px -75px rgba(0, 0, 0, 0.5);
+}
+
+#div-5{
+    box-shadow: 50px 50px 10px 0px rgba(0, 0, 0, 0.5),
+    -50px 50px 10px 0px rgba(255, 0, 0, 0.5),
+    50px -50px 10px 0px rgba(0, 255, 0, 0.5),
+    -50px -50px 10px 0px rgba(0, 0, 255, 0.5);
+}
+
+#div-6{box-shadow: inset 0px 0px 50px 50px white;}
+
+#div-7{
+    box-shadow: inset 20px 20px 10px 0px rgba(255, 255, 255, 0.8),
+    20px 20px 10px 0px rgba(0, 0, 0, 0.5);
+}

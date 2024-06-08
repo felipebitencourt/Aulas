@@ -1,0 +1,25 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+}
+
+div{
+    border: 3px solid black;
+    margin: 20px auto;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    background-color: blue;
+}
+
+p{
+    color: red;
+    padding: 20px 0px;
+}
+
+#pai-1 > p {backdrop-filter: blur(3px);}
+#pai-2 > p {backdrop-filter: brightness(50%);}
+#pai-3 > p {backdrop-filter: invert(100%);}
+#pai-4 > p {backdrop-filter: grayscale(100%);}
+#pai-5 > p {backdrop-filter: grayscale(100%) blur(5px) brightness(200%);}

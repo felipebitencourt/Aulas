@@ -1,0 +1,132 @@
+body{
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    margin: 0;
+    text-align: center;
+}
+
+.display{display: flex;}
+.center{align-items: center;}
+header{justify-content: flex-end;}
+.top, .mid > p{font-size: 14px;}
+
+.imagens, .links{
+    margin: 10px 10px 0px 0px;
+    display: inline-flex;
+    column-gap: 15px;
+}
+
+.links{gap: 10px;}
+#user{margin-right: 5px;}
+
+#user:hover{
+    outline: 3px solid rgba(128, 128, 128, 0.2);
+    border-radius: 50%;
+}
+
+#apps{
+    position: relative;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.imagens > span{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: -10px;
+}
+
+.imagens > span:hover{background-color: rgba(128, 128, 128, 0.2);}
+img:not(.google), button{cursor: pointer;}
+
+a{
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{text-decoration: underline;}
+p > a{color: blue;}
+.google{margin-bottom: -20px;}
+.mid > p{margin-top: -5px;}
+
+.mid{
+    height: 625px;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.search{
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 20px;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#lupa{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+input{
+    width: 375px;
+    border: none;
+    outline: none;
+    font-size: inherit;
+}
+
+#mic, #teclado{position: relative;}
+#mic{left: 35px;}
+#teclado{right: 35px;}
+
+button{
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.5);
+}
+    
+.search:hover{box-shadow: 0px 0px 2px 1px rgba(128, 128, 128, 0.5);}
+button:hover{outline: 1px solid rgba(128, 128, 128, 0.5);}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(243, 243, 243);
+    padding-bottom: 15px;
+}
+
+footer, footer > * > * > *{color: gray;}
+
+footer > p{
+    margin: 15px 30px;
+    text-align: left;
+}
+
+.rodape-final{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px 0px;
+    margin-top: 20px;
+}
+
+.final-top{width: 100%;}
+.final-mid{width: 60%;}
+.final-bot{width: 40%;}
+
+.final-top::before{
+    content: "";
+    background-image: url("Images/folha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}

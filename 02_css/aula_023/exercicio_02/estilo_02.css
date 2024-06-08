@@ -1,0 +1,55 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+div{
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.div1{
+    width: 50vw;
+    height: 300px;
+}
+
+#id1{
+    min-width: 200px;
+    background-color: red;
+}
+
+#id2{
+    max-width: 400px;
+    background-color: green;
+}
+
+#id3{
+    min-width: 200px;
+    max-width: 400px;
+    background-color: blue;
+}
+
+.div2{
+    width: 300px;
+    height: 50vw;
+}
+
+#id4{
+    min-height: 200px;
+    background-color: pink;
+}
+
+#id5{
+    max-height: 400px;
+    background-color: lightgreen;
+}
+
+#id6{
+    min-height: 200px;
+    max-height: 400px;
+    background-color: lightblue;
+}

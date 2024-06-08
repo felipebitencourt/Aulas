@@ -1,0 +1,31 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+div{box-sizing: border-box;}
+
+.pai{
+    background-color: blue;
+    color: yellow;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+@media all and (width <= 500px){
+
+    .pai{
+        color: white;
+        background-color: black;
+    }
+
+}

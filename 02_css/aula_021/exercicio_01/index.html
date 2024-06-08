@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 21.1</title>
+    <link rel="stylesheet" href="estilo_01.css">
+</head>
+<body>
+
+    <h1>Exemplos de Inputs + Labels</h1>
+
+    <hr><br>
+
+    <form>
+
+        <label for="nome">Texto 1:</label>
+        <input type="text" id="nome" autocomplete="off">
+
+        <br><br>
+
+        <label for="texto">Texto 2:</label>
+        <input type="text" id="texto" placeholder="Morada">
+
+        <br><br>
+
+        <label for="texto-3">Texto 3:</label>
+        <input type="text" id="texto-3" value="Pré-digitado">
+
+        <br><br>
+
+        <label for="texto-4">Texto 4:</label>
+        <input type="text" id="texto-4" value="Desabilitado" disabled>
+
+        <br><br>
+
+        <label for="texto-5">Texto 5:</label>
+        <input type="text" id="texto-5" value="Texto fixo" readonly>
+
+        <br><br>
+
+        <label for="texto-6">Texto 6:</label>
+        <input type="text" id="texto-6" minlength="3" maxlength="6">
+
+        <br><br>
+
+        <label for="texto-7">Texto 7:</label>
+        <input type="text" id="texto-7" required minlength="3" maxlength="6">
+
+        <br><br>
+        <hr><br>
+
+        <label for="numero">Número 1:</label>
+        <input type="number" id="numero">
+
+        <br><br>
+
+        <label for="numero-2">Número 2:</label>
+        <input type="number" id="numero-2" min="0" step="2">
+
+        <br><br>
+
+        <label for="numero-3">Número 3:</label>
+        <input type="number" id="numero-3" min="0" step="0.01">
+
+        <br><br>
+
+        <label for="numero-4">Número 4:</label>
+        <input type="number" id="numero-4" min="1" max="10" step="1">
+
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha">
+
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email">
+
+        <br><br>
+
+        <label for="url">Link:</label>
+        <input type="url" id="url">
+
+        <br><br>
+
+        <label for="telefone">Telefone:</label>          <!-- Premitir um grupo de 3 números -->
+        <input type="tel" id="telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Ex: 111-222-333"> 
+
+        <br><br>
+
+        <label for="file">Arquivo:</label>
+        <input type="file" id="file">
+
+        <br><br>
+        <hr><br>
+
+        <label for="range-1">Range 1:</label>
+        <input type="range" id="range-1">
+
+        <br><br>
+
+        <label for="range-2">Range 2:</label>
+        <input type="range" id="range-2" value="0">
+
+        <br><br>
+        <hr><br>
+
+        <label>Checkbox 1:</label>
+        <label for="a">A)</label><input type="checkbox" id="a">
+        <label for="b">B)</label><input type="checkbox" id="b">
+        <label for="c">C)</label><input type="checkbox" id="c">
+
+        <br><br>
+
+        <label>Checkbox 02:</label>
+        <label for="a">A)</label><input type="checkbox" id="a" checked>
+        <label for="b">B)</label><input type="checkbox" id="b">
+        <label for="c">C)</label><input type="checkbox" id="c" disabled>
+
+        <br><br>
+
+        <label>Radio 01:</label>
+        <label for="a">A)</label><input type="radio" id="a2" name="radio">
+        <label for="b">B)</label><input type="radio" id="b2" name="radio" checked>
+        <label for="c">C)</label><input type="radio" id="c2" name="radio">
+
+        <br><br>
+
+        <label for="color">Cor 1:</label>
+        <input type="color" id="color" value="#000000">
+
+        <br><br>
+
+        <label for="color-2">Cor 2:</label>
+        <input type="color" id="color-2" value="#ff0000">
+
+        <br><br>
+        <hr><br>
+
+        <label for="date-1">Data 1:</label>
+        <input type="date" id="date-1">
+
+        <br><br>
+
+        <label for="date-2">Data 2:</label>
+        <input type="date" id="date-2" value="2024-05-06">
+
+        <br><br>
+
+        <label for="date-3">Data 3:</label>
+        <input type="date" id="date-3" min="2024-10-01" max="2024-10-31">
+
+        <br><br>
+
+        <label for="date-4">Data 4:</label>
+        <input type="date" id="date-4" step="2">
+
+        <br><br>
+        <hr><br>
+
+        <label for="mes-1">Mês 1:</label>
+        <input type="month" id="mes-1">
+
+        <br><br>
+
+        <label for="mes-2">Mês 2:</label>
+        <input type="month" id="mes-2" value="2005-06">
+
+        <br><br>
+
+        <label for="mes-3">Mês 3:</label>
+        <input type="month" id="mes-3" min="2024-07" max="2024-12">
+
+        <br><br>
+
+        <label for="mes-4">Mês 4:</label>
+        <input type="month" id="mes-4" step="2">
+
+        <br><br>
+        <hr><br>
+
+        <label for="hora-1">Hora 1:</label>
+        <input type="time" id="hora-1">
+
+        <br><br>
+
+        <label for="hora-2">Hora 2:</label>
+        <input type="time" id="hora-2" value="21:05">
+
+        <br><br>
+
+        <label for="hora-3">Hora 3:</label>
+        <input type="time" id="hora-3" min="20:00" max="21:00">
+
+        <br><br>
+
+        <label for="hora-4">Hora 4:</label>
+        <input type="time" id="hora-4" step="1">
+
+        <br><br>
+
+        <label for="hora-5">Hora 5:</label>
+        <input type="time" id="hora-5" step="300">
+
+        <br><br>
+
+        <label for="hora-6">Hora 6:</label>
+        <input type="time" id="hora-6" step="3600">
+
+        <br><br>
+        <hr><br>
+
+        <label for="horaedata-1">Data e hora 1:</label>
+        <input type="datetime-local" id="horaedata-1">
+
+        <br><br>
+
+        <label for="horaedata-2">Data e hora 2:</label>
+        <input type="datetime-local" id="horaedata-2" step="1">
+
+        <br><br>
+
+        <label for="horaedata-3">Data e hora 3:</label>
+        <input type="datetime-local" id="horaedata-3" value="2024-06-05 21:00:00" step="1">
+
+        <br><br>
+        <hr><br>
+
+        <input type="submit" value="Enviar!">
+        <input type="reset" value="Reset">
+
+    </form>
+    
+</body>
+</html>

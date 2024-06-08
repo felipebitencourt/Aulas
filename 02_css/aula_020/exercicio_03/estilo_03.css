@@ -1,0 +1,42 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#em{
+    font-size: 2em;
+}
+
+#ch{
+    font-size: 5ch;
+    color: red;
+}
+
+#vh{
+    color: lightpink;
+    font-size: 2.5vh;
+}
+
+#rem{
+    color: green;
+    font: 1rem;
+}
+
+#ex{
+    color: blue;
+    font-size: 5ex;
+}
+
+#vw{
+    color: gray;
+    font-size: 2.5vw;
+}
+
+#vmin{
+    color: orange;
+    font-size: 3vmin;
+}
+
+#vmax{
+    color: purple;
+    font-size: 3vmax;
+}

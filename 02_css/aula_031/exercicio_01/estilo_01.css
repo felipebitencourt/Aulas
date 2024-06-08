@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Glitch+Pop&family=Workbench&display=swap');
+
+@font-face {
+    font-family: 'Honk';
+    src: url('Fonts/Honk-Regular.ttf') format('truetype'), url('Fonts/Honk-Regular-VariableFont_MORF\,SHLN.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    text-align: center;
+    font-size: 32px;
+}
+
+div{
+    border: 3px solid black;
+    padding: 10px;
+    width: 500px;
+    margin: 30px auto;
+}
+
+#div-1{
+    font-family: 'Workbench';
+    background-color: lightgreen;
+}
+
+span{
+    color: purple;
+    text-decoration: underline;
+}
+
+#div-2{
+    font-family: 'Rubik Glitch Pop';
+    background-color: lightblue;
+}
+
+#div-3{
+    font-family: 'Honk';
+    background-color: lightcyan;
+}
+
+#div-4{
+    font-family: 'Mogilte';
+    background-color: lightcoral;
+}

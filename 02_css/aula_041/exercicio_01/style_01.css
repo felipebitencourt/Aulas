@@ -1,0 +1,13 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+header, main, footer{
+    border: 2px solid black;
+    margin: 20px 0px;
+}
+
+header{background-color: lightgreen;}
+main{background-color: coral;}
+footer{background-color: lightblue;}

@@ -1,0 +1,34 @@
+:root{
+    --tamanho: 500px;
+    --bg: lightgreen;
+}
+
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+div{
+    width: 400px;
+    height: 50px;
+    background-color: var(--bg);
+    border: 3px solid black;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+#pai-1{
+    margin: auto;
+    width:calc(50vw - 30px);
+}
+
+#pai-2{
+    margin-top: 40px;
+    width: calc(100vw - 25px);
+}
+#pai-3{width: calc(var(--tamanho) / 2)}
+#pai-4{width: calc(var(--tamanho) * 1.25);}
+#pai-5{font-size: calc(var(--tamanho) * .05);}

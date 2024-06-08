@@ -1,0 +1,39 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+div{
+    margin: auto;
+    margin: 50px 0px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top left, red, orange, yellow);
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+#absolute{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#fixed{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    margin-top: 10px;
+}
+
+#sticky{
+    position: sticky;
+    margin: auto;
+    top: 10px;
+    bottom: 10px;
+}

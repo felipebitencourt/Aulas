@@ -1,0 +1,22 @@
+body{
+    background-image: url('lisboa_01.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+
+p{
+    border: 10px groove yellow;
+    background-color: red;
+    height: 300px;
+}

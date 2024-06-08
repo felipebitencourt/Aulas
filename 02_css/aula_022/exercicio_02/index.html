@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22.2</title>
+    <link rel="stylesheet" href="estilo_02.css">
+</head>
+<body>
+
+    <h1>Exemplos de select</h1><hr><br>
+
+    <form>
+
+        <label for="item">Select 1:</label>
+        <select id="item">
+            <option value="Queijo">Queijo</option>
+            <option value="Presunto">Presunto</option>
+            <option value="Bacon">Bacon</option>
+        </select>
+
+        <br><br>
+
+        <label for="escolha">Select 2:</label>
+        <select id="escolha">
+            <option value="">---Escolha ---</option>
+            <option value="Queijo">Queijo</option>
+            <option value="Presunto">Presunto</option>
+            <option value="Bacon">Bacon</option>
+        </select>
+
+        <br><br>
+
+        <label for="op">Select 3:</label>
+        <select id="op">
+            <option value="Opção 1" disabled>Opção 1</option>
+            <option value="Opção 2" >Opção 2</option>
+            <option value="Opção 3" selected>Opção 3</option>
+            <option value="Opção 4">Opção 4</option>
+        </select>
+
+        <br><br>
+
+        <label for="op-2">Select 4:</label>
+        <select id="op-2" disabled>
+            <option value="Opção 1" >Opção 1</option>
+            <option value="Opção 2" >Opção 2</option>
+            <option value="Opção 3" selected>Opção 3</option>
+            <option value="Opção 4">Opção 4</option>
+        </select>
+
+        <br><br>
+
+        <label for="op-3">Select 5:</label>
+        <select id="op-3">
+
+            <optgroup label="Vegano">
+                <option value="Queijo">Queijo</option>
+                <option value="Presunto">Presunto</option>
+                <option value="Bacon">Bacon</option>
+            </optgroup>
+
+            <optgroup label="Não Vegano">
+                <option value="Queijo" selected>Queijo</option>
+                <option value="Presunto">Presunto</option>
+                <option value="Bacon">Bacon</option>
+            </optgroup>
+
+        </select>
+
+        <br><br><hr><br>
+
+        <input type="submit" value="Enviar!">
+        <input type="reset" value="Reset">
+        
+    </form>
+
+    <h1>Exemplos de datalist</h1><hr><br>
+
+    <form>
+        
+        <label for="cidade">Cidades:</label>
+        <input list="cidades" type="text" id="texto">
+
+        <datalist id="cidades">
+            <option value="Porto"></option>
+            <option value="Bragança"></option>
+            <option value="Lisboa"></option>
+            <option value="Faro"></option>
+        </datalist>
+
+        <br><br><hr><br>
+
+        <input type="submit" value="Enviar!">
+        <input type="reset" value="Reset">
+    </form>
+
+    
+
+</body>
+</html>

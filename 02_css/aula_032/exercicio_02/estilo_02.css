@@ -1,0 +1,28 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+}
+
+div{
+    background-color: lightgreen;
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: justify;
+    border: 3px solid black;
+}
+
+.d1{box-sizing: content-box;}
+
+.d2{box-sizing: border-box;}
+
+.d3{
+    box-sizing: border-box;
+    outline: 5px solid red;
+}
+
+.d4{
+    box-sizing: border-box;
+    outline: 5px solid red;
+    outline-offset: 5px;
+}

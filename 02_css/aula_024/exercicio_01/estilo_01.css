@@ -1,0 +1,58 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+div{
+    text-align: justify;
+    padding: 15px;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+}
+
+#div1{background-color: red;}
+
+#div2{
+    overflow: auto;
+    background-color: green;
+    margin-top: 150px;
+}
+
+#div3{
+    overflow: scroll;
+    background-color: blue;
+    color: white;
+}
+
+.divimg{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#div4{background-color: pink;}
+
+#div5{
+    background-color: lightgreen;
+    overflow: auto;
+    margin-top: 200px;
+}
+
+#div6{
+    background-color: lightblue;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#div7{
+    background-color: orangered;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#div8{
+    background-color: purple;
+    overflow: hidden;
+}

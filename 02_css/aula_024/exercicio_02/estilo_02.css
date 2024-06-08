@@ -1,0 +1,42 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+}
+
+h1{text-align: center;}
+
+div{
+    border: 1px solid black;
+    background-color: lightgreen;
+    padding: 15px;
+    text-align: justify;
+}
+
+#link-1{text-decoration: none;}
+
+#link-2{text-decoration: underline solid red 3px;}
+
+#link-3{text-decoration: underline dotted red 3px;}
+
+#link-4{text-decoration: underline wavy red 3px;}
+
+#link-5{text-decoration: underline double red 3px;}
+
+#link-6{text-decoration: underline dashed red 3px;}
+
+#link-7{text-decoration: overline solid red 3px;}
+
+#link-8{text-decoration: line-through solid red 3px;}
+
+#link-9{
+    text-decoration: underline overline line-through solid red 3px;
+}
+
+#link-10{
+    text-decoration-color: blue;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+#am{background-color: yellow;}

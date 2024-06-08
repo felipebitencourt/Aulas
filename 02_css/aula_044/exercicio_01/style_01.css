@@ -1,0 +1,11 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+h1{
+    background-color: black;
+    color: white;
+}

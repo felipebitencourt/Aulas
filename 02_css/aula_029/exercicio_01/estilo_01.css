@@ -1,0 +1,29 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+}
+
+.pai{
+    border: 3px solid black;
+    margin: 20px auto;
+    height: 320px;
+    width: 650px;
+    background-image: url('arco.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#pai-1{filter: brightness(200%);}
+#pai-2{filter: brightness(50%);}
+#pai-3 {filter: blur(3px);}
+#pai-4 {filter: grayscale(50%);}
+#pai-5 {filter: grayscale(100%);}
+#pai-6 {filter: contrast(200%);}
+#pai-7 {filter: contrast(25%);}
+#pai-8 {filter: drop-shadow(10px 10px 5px red);}
+#pai-9 {filter: invert(100%);}
+#pai-10 {filter: saturate(20%);}
+#pai-11 {filter: saturate(400%);}
+#pai-12 {filter: sepia(75%);}
+#pai-13 {filter: blur(3px) brightness(50%) invert(100%);}

@@ -1,0 +1,109 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+
+nav, footer{
+    background-color: rgb(75, 75, 75);
+    font-size: 1rem;
+    
+}
+
+a, .servicos{transition-duration: .5s;}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+nav{
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+a:hover{background-color: rgb(200, 200, 200);}
+
+#main-1{
+    margin-top: -25px;
+    position: relative;
+    z-index: -1;
+    display: flex;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url('images/topo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.titlesub{
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.titlesub h1{
+    font-size: 2.5rem;
+    margin-top: 0px;
+}
+.titlesub h3{
+    font-size: 1.25rem;
+    margin: -20px 0px 0px 0px;
+}
+
+.titulo-servicos{
+    margin: 0px;
+    background-color: red;
+    font-size: 1.75rem;
+    padding: 15px;
+    width: 100vw;
+}
+
+#main-2 .servicos div h3{font-size: 1.75rem;}
+
+.servicos h3{
+    position: relative;
+    top: 90px;
+}
+
+#solar, #eolica, #hidre, #nuclear{
+    width: 50%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#solar{background-image: url('images/solar.png');}
+#eolica{background-image: url('images/eolica.jpg');}
+#hidre{background-image: url('images/energia-hidreletrica-fb.webp');}
+#nuclear{background-image: url('images/energia-nuclear1.jpg');}
+
+.hover:hover{
+    filter: brightness(150%);
+    color: red;
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+    padding: 12px 0px;
+}

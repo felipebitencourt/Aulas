@@ -1,0 +1,62 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('lisboa_02.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cabecalho {text-align: center;}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.amarelo{
+    color: yellow;
+    font-size: 22px;
+    margin: 10px;
+}
+
+img{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+.meio{
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 30px 0px;
+}
+
+.meio-p {padding: 30px;}
+
+table{
+    border: 3px dotted black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    font-size: 20px;
+}
+
+th, td{
+    border: 3px dotted black;
+}
+
+.t1{
+    background-color: rgba(255, 255, 0, 0.60);
+    border-radius: 30px 0px;
+    padding: 10px;
+}
+
+.rodape{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 30px 0px;
+    text-align: center;
+}
+
+.branco {color: white;}

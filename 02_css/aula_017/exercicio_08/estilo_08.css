@@ -1,0 +1,27 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    text-align: center;
+}
+
+p,#img1{
+    padding-top: 10px;
+    font-size: 25px;
+    background-size:cover;
+    background-position: center;
+    border-radius: 20px;
+    margin: auto;
+}
+
+p{
+    background-image: url("praia.jpg");
+    width: 400px;
+    height: 250px;
+}
+
+
+#img1{
+    background-image: url("neve.jpg");
+    width: 600px;
+    height: 350px;
+}

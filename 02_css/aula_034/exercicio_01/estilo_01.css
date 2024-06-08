@@ -1,0 +1,60 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+}
+
+.pai{
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, purple, darkblue, black);
+    color: white;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.filho{
+    border: 1px solid black;
+    background-color: rgba(32, 178, 171, 0.5);
+}
+
+#pai-1{display: grid;}
+
+#pai-2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#pai-3{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+#pai-3 .filho-1{
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#pai-3 .filho-2{
+    background-color: cyan;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+#pai-3 .filho-3{
+    background-color: violet;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}

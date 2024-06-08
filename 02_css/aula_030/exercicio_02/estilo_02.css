@@ -1,0 +1,32 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+}
+
+body > div{
+    border: 3px solid black;
+    padding: 10px 0px;
+    margin: 40px auto;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+}
+
+.mensagem{background-color: lightgreen;}
+.alerta{
+    background-color: yellow;
+    border: 3px dashed red;
+    border-radius: 10px;
+}
+
+.mensagem > .alerta{
+    background-color: violet;
+    margin: auto 10px;
+}
+
+.mensagem.alerta{
+    background-color: blue;
+    border-radius: 40px;
+    border: 10px double yellow;
+    color: white;
+}

@@ -1,0 +1,19 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+}
+
+textarea{
+    width: 200px;
+    height: 150px;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 250px;
+}
+
+#texto-5{resize: horizontal;}
+
+#texto-6{resize: vertical;}
+
+#texto-7{resize: none;}

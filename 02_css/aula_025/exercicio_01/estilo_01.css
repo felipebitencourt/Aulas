@@ -1,0 +1,76 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+
+#div-1{
+    background: linear-gradient(to left, yellow, orange, red);
+}
+
+#div-2{
+    background: linear-gradient(to right, yellow, orange, red);
+}
+
+#div-3{
+    background: linear-gradient(to top, red, orange, yellow);
+}
+
+#div-4{
+    background: linear-gradient(to bottom, red, orange, yellow);
+}
+
+#div-5{
+    background: linear-gradient(to bottom left, purple, white, blue, purple, red, black);
+}
+
+#div-6{
+    background: linear-gradient(to bottom right, purple, white, blue, purple, red, black);
+}
+
+#div-7{
+    background: linear-gradient(to top left, purple, white, blue, purple, red, black);
+}
+
+#div-8{
+    background: linear-gradient(to top right, purple, white, blue, purple, red, black);
+}
+
+#div-9{
+    background: linear-gradient(225deg, cyan, blue, black);
+}
+
+#div-10{
+    background: linear-gradient(110deg, cyan, blue, black);
+}
+
+#div-11{
+    background: linear-gradient(0.25turn, violet, purple, red, brown);
+}
+
+#div-12{
+    background: linear-gradient(0.85turn, violet, purple, red, brown);
+}
+
+#div-13{
+    background: linear-gradient(to right, red 0 33.3%, white 33% 66.3%, blue 66.6% 100%);
+}
+
+#div-14{
+    background: linear-gradient(to bottom, red 0 33.3%, white 33% 66.3%, blue 66.6% 100%);
+}
+
+#div-15{
+    background: linear-gradient(to bottom right, red 0 33.3%, white 33% 66.3%, blue 66.6% 100%);
+}
+
+#div-16{
+    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.65), rgba(128, 0, 128, 0.65), rgba(255, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    linear-gradient(90deg, rgb(0, 255, 0), cyan, yellow, orangered);
+}

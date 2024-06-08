@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+body{
+    font-family: 'Waiting for the Sunrise';
+    text-align: center;
+    margin: 0px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 100px;
+    margin-top: 50px;
+}
+
+div{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    transition-duration: .5s;
+}
+
+p{
+    text-align: left;
+    padding: 0px 10px;
+}
+
+.nota-3, footer{color: white;}
+div:hover{
+    background-color: rgba(255, 255, 255);
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}

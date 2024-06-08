@@ -1,0 +1,57 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+div{
+    text-align: justify;
+    background-color: aqua;
+}
+
+.div-1{
+    background-color: brown;
+    margin: 50px;
+    color: white;
+    
+}
+
+.div-2{
+    background-color: orange;
+    margin: 50px 200px;
+}
+
+.div-3{
+    background-color: blue;
+    color: white;
+    margin-top: 100px;
+}
+
+.div-4{
+    background-color: green;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.div-5{
+    background-color: pink;
+    margin-left: 100px;
+}
+
+.div-6{
+    background-color: purple;
+    color: white;
+    margin-right: 100px;
+}
+
+.div-7{
+    background-color: red;
+    margin: 0px 100px 20px 40px;
+}
+
+.div-8{
+    background-color: rgb(97, 97, 197);
+    margin: 10px 50px 100px;
+}

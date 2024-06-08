@@ -1,0 +1,25 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+}
+h1, h3{text-align: center;}
+
+.pai{
+    border: 3px solid black;
+    padding: 10px 10px;
+    margin: 20px auto;
+    height: 200px;
+    width: 300px;
+    background-color: lightgreen;
+}
+
+.filho{
+    border: 2px solid black;
+    margin: 10px;
+    background-color: white;
+}
+
+.filho:hover {background-color: yellow;}
+#pai-1 > .filho-1:hover ~ .filho-5{background-color: red;}
+#pai-2 > .filho-5:hover ~ .filho-1 {background-color: red;}
+#pai-3 > .filho:hover ~ .filho{background-color: red;}

@@ -1,0 +1,31 @@
+body{
+    font-family: 'Ink Free';
+    font-weight: bold;
+    text-align: center;
+}
+
+button{margin: 10px;}
+
+#bt1{cursor:default;}
+#bt2{cursor:pointer;}
+#bt3{cursor:wait;}
+#bt4{cursor:grab;}
+#bt5{cursor:grabbing;}
+#bt6{cursor:crosshair;}
+#bt7{cursor:zoom-in;}
+#bt8{cursor:zoom-out;}
+#bt9{cursor:all-scroll;}
+#bt10{cursor:cell;}
+#bt11{cursor:copy;}
+#bt12{cursor:help;}
+#bt13{cursor:progress;}
+
+#bt14, #bt15, #bt16{
+    border: 2px dashed black;
+    border-radius: 10px;
+    color: white;
+}
+
+#bt14{background-color: red;}
+#bt15{background-color: green;}
+#bt16{background-color: blue;}

@@ -1,0 +1,43 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1 {text-align: center;}
+
+div {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#px{
+    background-color: red;
+    width: 350px;
+}
+
+#cm{
+    background-color: green;
+    width: 12cm;
+    color: white;
+}
+
+#mm{
+    background-color: blue;
+    width: 150mm;
+    color: white;
+}
+
+#in{
+    background-color: yellow;
+    width: 7in;
+}
+
+#pt{
+    background-color: orange;
+    width: 300pt;
+}
+
+#pc{
+    background-color: violet;
+    width: 32pc;
+}

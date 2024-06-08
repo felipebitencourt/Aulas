@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(108, 251, 251);
+    margin: auto;
+}
+
+audio{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 50px;
+    opacity: 5%;
+}
+
+#sol{width: 130px;}
+
+.nuvem{width: 70px;}
+
+#nuvem-1{padding-left: 300px;}
+
+#nuvem-2{padding-left: 400px;}
+
+#nuvem-3{padding-left: 500px;}
+
+div{
+    background-color: rgb(103, 56, 24);
+    color: white;
+    height: 120px;
+    position: fixed;
+    bottom: 0px;
+}
+
+pre{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    padding-left: 5px;
+    margin-top: -100px;
+}
+
+.arvore{
+    margin-top: -200px;
+    padding: 0px 0px 5px 5px;
+}
+
+#arvore-1{width: 80px;}
+
+#arvore-2{width: 120px;}
+
+#arvore-3{width: 140px;}
+
+#arvore-4{width: 130px;}
+
+#arvore-5{width: 60px;}
+
+.gap1{margin-top: -30px;}
+
+#hadouken{width: 100px;}
+
+.gap2{
+    margin-top: -300px;
+    padding-bottom: 30px;
+}
+
+#superman{width: 280px;}
+
+#ryu{
+    width: 150px;
+    margin-top: -150px;
+    padding-left: 1000px;
+}
+
+.gap3{
+    margin-top: -300px;
+    padding: 0px 0px 20px 300px;
+}
+
+#ken{width: 100px;}
+
+#batman{
+    width: 210px;
+    margin-top: -170px;
+    padding: 0px 0px 50px 150px;
+}
