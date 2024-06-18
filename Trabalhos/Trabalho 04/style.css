@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+}
+
+header{padding-bottom: 20px;}
+header, footer{background-color: green;}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+nav{
+    margin: auto;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+nav, .filmes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+div img{height: 350px;}
+
+a div{
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 20px;
+    background-color: rgba(0, 255, 0, 0.25);
+    width: 300px;
+    transition-duration: 0.5s;
+}
+
+.filmes{
+    margin: 30px 0px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+}
+
+nav a:hover{
+    color: rgb(255, 255, 0);
+    font-weight: bold;
+}
+
+.filmes a div:hover{
+    background-color: rgba(255 255, 0, 0.75);
+    border: 2px solid rgb(255, 255, 0);
+}
+
+@media all and (width <= 800px){
+
+    nav{width: 90%;}
+    div p{display: none;}
+
+    a div{
+        border: 2px solid rgb(255, 0, 0);
+        border-radius: 0px;
+        background-color: rgba(255, 0, 0, 0.25);
+        width: 300px;
+    }
+
+}
