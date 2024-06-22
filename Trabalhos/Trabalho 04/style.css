@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Old London';
+    src: url('../../Fontes/Old_london.otf') format('opentype'), url('../../Fontes/Old_London.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Old London Alternate';
+    src: url('../../Fontes/Old_london_alternate.otf') format('opentype'), url('../../Fontes/Old_London_Alternate.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body{
     background-color: black;
     color: white;
@@ -11,7 +23,8 @@ header, footer{background-color: green;}
 
 .title{
     font-size: 32px;
-    font-weight: bold;
+    font-family: 'Old London';
+    text-shadow: 5px 5px 5px black;
     padding: 15px 0px;
 }
 
