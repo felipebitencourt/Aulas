@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" modified="2024-06-25T19:06:48.584Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="kUjC5hkklP9jaijKMCGx" version="24.6.2" type="device">
+  <diagram name="Página-1" id="ruD7eFnyUHtWOUWnmszg">
+    <mxGraphModel dx="322" dy="202" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sKpNf7dvKyxAemXofSIb-7" value="Início" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="sKpNf7dvKyxAemXofSIb-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="389.5" y="40" as="sourcePoint" />
+            <mxPoint x="389.5" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-9" value="Pegar a escada" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="342.38" y="60" width="95.25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="sKpNf7dvKyxAemXofSIb-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="389.49" y="100" as="sourcePoint" />
+            <mxPoint x="389.49" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-11" value="Posicinar a escada abaixo da lâmpada" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="339.99" y="120" width="97.63" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.533;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="sKpNf7dvKyxAemXofSIb-13" source="sKpNf7dvKyxAemXofSIb-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="389.49" y="160" as="sourcePoint" />
+            <mxPoint x="389.49" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="sKpNf7dvKyxAemXofSIb-15" source="sKpNf7dvKyxAemXofSIb-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="389.49" y="220" as="sourcePoint" />
+            <mxPoint x="389.49" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-15" value="Subir na escada e retirar a lâmpada queimada" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="337.37" y="270" width="107.63" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-16" value="Fim" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="355" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="sKpNf7dvKyxAemXofSIb-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="389.49" y="220" as="sourcePoint" />
+            <mxPoint x="390" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-13" value="Pegar a lâmpada nova e pôr ao lado" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="341.18" y="190" width="98.82" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="389.58" y="320" as="sourcePoint" />
+            <mxPoint x="389.58" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-25" value="Pôr a lâmpada nova" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="337.37" y="350" width="107.63" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sKpNf7dvKyxAemXofSIb-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="sKpNf7dvKyxAemXofSIb-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="445" y="374.8" as="sourcePoint" />
+            <mxPoint x="475" y="374.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
