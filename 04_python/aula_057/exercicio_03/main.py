@@ -8,8 +8,8 @@ print(teste.lower())
 print(teste.capitalize())
 print(teste.title())
 
-print(len(teste))
-print(teste.count("o"))
-print(teste.replace(",", ""))
+print(len(teste))                  #contar os carácteres
+print(teste.count("o"))            #contar os carácteres específicos
+print(teste.replace(",", ""))      #subistituir um carácter pelo outro
 
 print("\n\n")
