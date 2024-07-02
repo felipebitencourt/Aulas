@@ -1,18 +1,25 @@
-import math
-import random
-
 print("\n\n")
 
-int = -17
-dec = 1.987654321
+nome_1 = "Felipe"
+nome_2 = "João"
+nome_3 = "Maria"
 
+saldo_1 = 15.20
+saldo_2 = 1.3
+saldo_3 = 23.7
 
-print(abs(int))                    #módulo (deixar +)
-print(round(dec, 2))               #aproximar e "qt de casas"
-print(math.sin(90))
-print(math.cos(90))
-print(math.ceil(2.0099))           #arredondar sempre para cima, independente do número após a casa decimal
-print(math.floor(2.0099))          #arredondar sempre para baixo, independente do número após a casa decimal
-print(random.randint(1, 10))       #gerar números aleatórios dentro do intervalo indicado
+print(f"Nome 1: {nome_1:>20}")     #alinhar à direita (com espaços em branco)
+print(f"Nome 2: {nome_2:<20}X")    #alinhar à esquerda (com espaços em branco)
+print(f"Nome 3: {nome_3:^20}")     #alinhar ao centro (com espaços em branco)
+
+print("=" * 40)
+
+print(f"Nome 1: {nome_1:.>20}")
+print(f"Nome 2: {nome_2:.<20}")
+print(f"Nome 3: {nome_3:.^20}")
+
+print(f"Saldo 1: {saldo_1:.3f}")
+print(f"Saldo 2: {saldo_2:.3f}")
+print(f"Saldo 3: {saldo_3:.3f}")
 
 print("\n\n")

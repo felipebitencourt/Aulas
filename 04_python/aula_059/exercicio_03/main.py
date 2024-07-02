@@ -1,16 +1,17 @@
-import math
-import random
-
 print("\n\n")
 
-nome = "Felipe"
-sobrenome = "Bitencourt"
-idade = 27
-morada = "Póvoa"
+print("=== Ao Cubo ===\n")
 
-print("Sou o ", nome, " ", sobrenome, ", tenho ", idade, " anos e moro na ", morada, ". \n", sep = "")
-print(f"Sou o {nome} {sobrenome}, tenho {idade} anos e moro na {morada}. \n")
-print("Sou o {} {}, tenho {} anos e moro na {}. \n".format(nome, sobrenome, idade, morada))
-print("Sou o {0} {1}, tenho {2} anos e moro na {3}. \n".format(nome, sobrenome, idade, morada))
+n1 = int(input("Digite um número → "))
+cubo1 = n1 ** 3
+
+print(f"O cubo do número ({n1}) é ({cubo1})\n")
+
+print("=== Ao Cubo ===\n")
+
+n2 = float(input("Digite um número → "))
+cubo2 = n2 ** 3
+
+print(f"O cubo do número ({n2}) é ({cubo2})")
 
 print("\n\n")
