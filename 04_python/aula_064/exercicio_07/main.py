@@ -9,9 +9,11 @@ valor2 = float(input("→ Digite o segundo valor: "))
 
 def numero(valor1, valor2):
     if(valor1 > valor2):
-        print(f"\n→ {valor1}")
+        print(f"\n→ O maior valor é: {valor1}")
+    elif(valor2 == valor1):
+        print("\nOPÇÃO INVÁLIDA")
     else:
-        print(f"\n→ {valor2}")
+        print(f"\n→ O maior valor é: {valor2}")
 
 numero(valor1, valor2)
 

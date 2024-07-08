@@ -10,6 +10,8 @@ valor2 = float(input("→ Digite o segundo valor: "))
 def numero(valor1, valor2):
     if(valor1 < valor2):
         print(f"\n→ ({valor1}) e ({valor2})")
+    elif(valor2 == valor1):
+        print("\nOPÇÃO INVÁLIDA")
     else:
         print(f"\n→ ({valor2}) e ({valor1})")
 
