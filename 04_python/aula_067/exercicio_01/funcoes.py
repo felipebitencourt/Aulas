@@ -12,8 +12,7 @@ def temp_f(celsius):
 #funções especiais
 def limpa():
     if(os.name == "nt"): os.system("cls")
-    else:
-        os.system("clear")
+    else: os.system("clear")
 
 def aguarde(tempo): time.sleep(tempo)
 

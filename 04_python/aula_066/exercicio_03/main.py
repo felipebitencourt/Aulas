@@ -15,11 +15,8 @@ else:
         print(f"\n→ Estudar para o ({x}º) teste.")
         teste = input(f"- Vc passou no ({x}º)? ")
         x += 1
-    print("\nParabéns!")
-
-
+    print(f"\nParabéns! Foi aprovado no ({x-1}º) teste.")
 
 print("\n", "{:=^20}".format("FIM"))
 
 print("\n\n")
-
