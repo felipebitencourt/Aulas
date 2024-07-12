@@ -11,9 +11,7 @@ print(f"\n --- Múltiplos de ({numero}) de 0 a 100 --- \n")
 
 
 while(x <= 100):
-
-    if(x % numero == 0):
-        print(f" {x}")
-    x += 1
+    print(f"{x}")
+    x += numero
 
 print("\n\n")
