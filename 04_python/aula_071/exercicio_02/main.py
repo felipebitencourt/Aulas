@@ -1,5 +1,6 @@
 from funcoes import *
 import globais
+from termcolor import colored, cprint
 
 limpa()
 
@@ -15,8 +16,7 @@ while(True):
     elif(opcao == 0):
         animar("Sair")
         break
-    else:
-        print("\n--- OPÇÃO INVÁLIDA ---\n")
+    else: print(colored("\n--- OPÇÃO INVÁLIDA ---\n", "red"))
 
     input("→ Aperte <ENTER> para contiuar... ")
     

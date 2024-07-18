@@ -1,7 +1,6 @@
 import os
 import time
 import globais
-from termcolor import colored, cprint
 
 #funções especiais
 def limpa():
@@ -46,10 +45,10 @@ def vender():
     valor = float(input("→ Valor total da venda: "))
 
     if(valor > 0): 
-        print(colored("\n" + "{:-^30}".format(" SUCESSO ") + "\n", "green"))
+        print("\n", "{:-^30}".format(" SUCESSO "), "\n")
         globais.saldo += valor
         globais.historico += f"{descricao} → {valor:.2f} €\n"
-    else: print(colored("\n--- VALOR INVÁLIDO ---\n", "red"))
+    else: print("\n--- VALOR INVÁLIDO ---\n")
 
 def historico():
     print("{:-^30}".format(" Histórico "), "\n")
