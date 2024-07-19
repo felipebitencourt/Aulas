@@ -6,7 +6,7 @@ limpa()
 print("\n\n")
 
 array = ["uva", "maçã", "morango", "ananás", "banana", "laranja"]
-print(colored(f"→ Lista original: {array}\n", "green"))
+print(colored(f"→ Lista original: {array}\n", "blue"))
 print(f"→ O 1º elemento é: {array[0]}\n")
 
 print(f"→ O último 'usando indexs positivos': {array[5]}")
