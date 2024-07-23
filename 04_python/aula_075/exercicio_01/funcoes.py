@@ -47,9 +47,13 @@ def registrar():
 
     cprint("{:-^40}".format(" Cadastro Novas Pessoa ") + "\n", "black", "on_white")
 
-    globais.pessoas.append(input("→ Digite o nome: "))
+    novo_nome = input("→ Digite o nome: ")
+    if(not (novo_nome in globais.pessoas)):
+        globais.pessoas.append(novo_nome)
+        print(colored("\n" + "{:-^40}".format(" SUCESSO ") + "\n", "green"))
 
-    print(colored("\n" + "{:-^40}".format(" SUCESSO ") + "\n", "green"))
+    else:
+        print(colored("\n" + "{:-^40}".format(" PESSOA JÁ REGISTRADA ") + "\n", "red"))
 
 def editarPessoas():
 
@@ -60,8 +64,14 @@ def editarPessoas():
     numero = int(input("\n→ Digite o número do aluno(a) que deseja editar: "))
 
     if(numero > 0 and numero <= len(globais.pessoas)):
-        globais.pessoas[numero-1] = input(f"→ Digite o novo nome para substituir ( {globais.pessoas[numero-1]} ): ")
-        print(colored("\n" + "{:-^40}".format(" SUCESSO ") + "\n", "green"))
+        
+        novo_nome = input(f"→ Digite o novo nome para substituir ( {globais.pessoas[numero-1]} ): ")
+        if(not (novo_nome in globais.pessoas)):
+            globais.pessoas[numero] = novo_nome
+            print(colored("\n" + "{:-^40}".format(" SUCESSO ") + "\n", "green"))
+
+        else:
+            print(colored("\n" + "{:-^40}".format(" PESSOA JÁ REGISTRADA ") + "\n", "red"))
 
     else:
         print(colored("\n" + "{:-^40}".format(" ID INVÁLIDO ") + "\n", "red"))
