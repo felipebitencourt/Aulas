@@ -7,12 +7,13 @@ while(True):
     limpa()
 
     opcao = exibirMenu()
-    animar("Aguarde")
 
-    if(opcao == 1): registrarColaborador()
-    elif(opcao == 2): editarColaborador()
-    elif(opcao == 3): apagarColaborador()
-    elif(opcao == 4): listarColaborador(True)
+    animar("Aguarde")
+    
+    if(opcao == 1): registrar()
+    elif(opcao == 2): editarPessoas()
+    elif(opcao == 3): apagarPessoas()
+    elif(opcao == 4): listarPessoas(True)
     elif(opcao == 0):
         animar("Sair")
         break

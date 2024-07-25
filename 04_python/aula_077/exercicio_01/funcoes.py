@@ -66,10 +66,10 @@ def registrarColaborador():
     cprint("{:=^40}".format(" Novo Colaborador ") + "\n", "black", "on_white")
 
     nome = input("→ Digite o NOME do(a) novo(a) colaborador(a): ")
-    cargo = input("→ Digite o CARGO do(a) novo(a) colaborador(a): ")
-    ordenado = float(input("→ Digite o ORDENADO do(a) novo(a) colaborador(a): "))
-
-    if(not (nome in globais.colaborador)):
+    
+    if(not nomeExiste(nome)):
+        cargo = input("→ Digite o CARGO do(a) novo(a) colaborador(a): ")
+        ordenado = float(input("→ Digite o ORDENADO do(a) novo(a) colaborador(a): "))
         globais.colaborador.append(novoColaborador(nome, cargo, ordenado))
         globais.total_colaboradores += 1
         globais.ordenado += ordenado
@@ -101,7 +101,7 @@ def editarColaborador():
         if(opcao_editar == 1):
   
             novo_nome = input(f"→ Digite o novo NOME para substituir ( {globais.colaborador[id-1][0]} ): ")
-            if(not (novo_nome in globais.colaborador)):
+            if(not nomeExiste(novo_nome)):
                 globais.colaborador[id-1][0] = novo_nome
                 print(colored("\n" + "{:-^40}".format(" SUCESSO! ") + "\n", "green"))
 
@@ -173,3 +173,9 @@ def listarColaborador(com_titulo):
 #         print(f"\nTotal de colaboradores: ({globais.total_colaboradores})")
 #         print(f"Ordenado mensal da equipa: ({globais.ordenado:.2f} €)")
 #     print()
+
+def nomeExiste(nome):
+    for c in globais.colaborador:
+        if(c[0] == nome): return True
+    
+    return False
