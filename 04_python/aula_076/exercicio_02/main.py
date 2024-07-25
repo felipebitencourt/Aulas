@@ -22,4 +22,5 @@ print("\n", "="*50, "\n")
 for i in range(len(pessoas)):
     print(f"{i+1} - {pessoas[i][0]} tem {pessoas[i][1]} anos e mora em {pessoas[i][2]}.")
 
+
 print("\n\n")
