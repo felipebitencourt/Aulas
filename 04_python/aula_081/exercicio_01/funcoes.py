@@ -4,10 +4,11 @@ import globais
 from Usuario import *
 
 # Funções
-def verificarLogin(login_digitado, senha_digitada):
+def verificarLogin(login_digitado):
   for u in globais.usuarios:
-    if(u.login == login_digitado and u.senha == senha_digitada):
-      return True
+    if(u.login == login_digitado): 
+      u.toString()
+      return True 
   return False
 
 

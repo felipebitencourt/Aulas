@@ -1,3 +1,5 @@
+from Usuario import *
+
 usuarios = [
-    ("Fabrício", 28, "Covilhã")
+    Usuario("Fabrício", "fabricio", "teste")
 ]

@@ -6,8 +6,8 @@ from Usuario import *
 # Funções
 def verificarLogin(login_digitado, senha_digitada):
   for u in globais.usuarios:
-    if(u.login == login_digitado and u.senha == senha_digitada):
-      return True
+    if(u.login == login_digitado and u.senha == senha_digitada): 
+      return True 
   return False
 
 
@@ -30,5 +30,5 @@ def animar(frase):
 
   limpa()
 
-def carregueEnter():
-  input("\nCarregue <ENTER> para continuar...")
+def apertarEnter():
+  input("\nAperte <ENTER> para continuar...")
