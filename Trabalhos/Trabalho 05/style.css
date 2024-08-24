@@ -12,8 +12,8 @@ body{
 
 /* --- POSIÇÕES --- */
 
-.position_top{margin-top: 52px;}
 .nav_bar{margin-top: 0px;}
+.position_top{margin-top: 52px;}
 
 .position_butt{
     position: absolute;
@@ -26,11 +26,22 @@ body{
     width: 480px;
 }
 
-.banner-titulo{font-size: 40px;}
-.texto-titulo{
-    margin-top: 15px;
-    font-size: 18px;
-}
+/*   --- ALINHAMENTOS ---   */
+
+#titulo{font-size: 35px;}
+#texto_categoria{margin: 10px 25px 0px;}
+
+.texto_fs13{font-size: 13px;}
+.texto-titulo{margin-top: 15px;}
+.texto_destaque{margin: 35px 25px 0px;}
+.titulo_t1{font-size: 25px;}
+.titulo_destaque{margin: 30px 0px 0px 25px;}
+.butt_destaque{margin: 15px 37px;}
+.edit_margin{margin-bottom: 106px;}
+
+div span{margin: 10px 25px 0px;}
+p{font-size: 18px;}
+
 
 .barra{
     border: 1px solid black;
@@ -54,6 +65,7 @@ nav > a, nav > div > a{
     font-size: 18px;
 }
 
+#carouselExampleIndicators .carousel-indicators button, #carouselExampleCaptions .carousel-indicators button.active{background-color: rgba(0, 0, 0, 0.5);}
 #carouselExampleIndicators .carousel-indicators button, #carouselExampleCaptions .carousel-indicators button{
     width: 20px;
     height: 20px;
@@ -63,12 +75,9 @@ nav > a, nav > div > a{
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-#carouselExampleIndicators .carousel-indicators button, #carouselExampleCaptions .carousel-indicators button.active{background-color: rgba(0, 0, 0, 0.5);}
-
 .sub_menu{
     box-shadow: 1px 1px 5px 1px rgba(112, 112, 112, 0.5);
     padding: 25px 30px;
-    font-size: 13px;
 }
 
 .saber_mais{
@@ -76,8 +85,31 @@ nav > a, nav > div > a{
     height: 30px;
     border: none;
     color: white;
-    font-size: 13px;
     background-color: rgb(180, 125, 51);
+}
+
+.bem_vindo{
+    width: 1190px;
+    position: relative;
+    top: -45px;
+    box-shadow: -1px 2px 5px 2px rgba(77, 77, 77, 0.4);
+    background-color: white;
+}
+
+footer p{margin-top: 20px;}
+#barra_cima{margin-bottom: 27px;}
+#barra_baixo{margin-top: 27px;}
+
+.destaque{box-shadow: 3px 3px 5px rgba(77, 77, 77, 0.2);}
+.imagens{margin-top: 30px;}
+.margin_tec{margin-left: 50px;}
+.sub_footer{margin-top: 58px;}
+.campo{font-size: 15px;}
+.ralc{margin-left: 43px;}
+
+.copy{
+    margin-top: 78px;
+    margin-bottom: 70px;
 }
 
 /*  ---  HOVER  ---   */
@@ -86,13 +118,11 @@ nav > a:hover, nav > div > a:hover{color: rgb(180, 125, 51);}
 nav > a.active{color: rgb(180, 125, 51);}
 .dropdown-menu > li > a:hover{color: rgb(177, 126, 59);}
 .saber_mais:hover{background-color: rgb(77, 77, 77);}
-
-.bem_vindo{
-    position: relative;
-    top: -45px;
-    box-shadow: -1px 2px 5px 2px rgba(77, 77, 77, 0.4);
-    background-color: white;
-    width: 1190px;
-}
-
 .bem_vindo h1{font-size: 23px;}
+
+.img_hover{display: none;}
+.image:hover img.img_base{display: none;}
+.image:hover img.img_hover{
+    display: inline-block;
+    cursor: pointer;
+}
