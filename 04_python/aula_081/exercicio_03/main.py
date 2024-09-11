@@ -12,4 +12,8 @@ while(True):
     cartao = input(f"- Insira o cartão: ")
     pin = input(f"- Digite o pin: ")
 
+    opcao = exibirMenu()
+
+    apertarEnter()
+
 print("\n\n")

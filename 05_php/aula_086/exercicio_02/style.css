@@ -1,0 +1,41 @@
+body{
+    color: lawngreen;
+    background-color: black;
+    font-family: "Ink Free";
+    overflow-x: hidden;
+}
+
+.center{text-align: center;}
+
+.caixa{
+    margin: 15px auto;
+    width: 500px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+form, a{margin-bottom: 15px;}
+
+h3{color: red;}
+
+.position_r{
+    position: relative;
+    top: 40px;
+    right: 30px;
+}
+.position_c{
+    position: relative;
+    top: 90px;
+    left: 140px;
+}
+
+#saida{
+    margin: auto;
+    background-image: url("circulo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 500px;
+    height: 200px;
+}

@@ -13,14 +13,14 @@ def verificarCartao(cartao, pin):
   return False
 
 def exibirMenu():
-  print("=== Multibanco Python ===\n")
+  print("\n=== Multibanco Python ===\n")
   print("1 - Levantamentos.")
   print("2 - Depósitos.")
   print("3 - Pagamentos.")
   print("4 - Dados da conta.")
   print("5 - Alterar PIN.")
   print("0 - Retirar cartão.")
-  return int(input("- Opção: "))
+  return int(input("\n- Opção: "))
 
 # def levantar():
 #   print("\n--- Levantar ---\n")
@@ -53,5 +53,5 @@ def animar(frase):
 
   limpa()
 
-def carregueEnter():
-  input("\nCarregue <ENTER> para continuar...")
+def apertarEnter():
+  input("\nAperte <ENTER> para continuar...")

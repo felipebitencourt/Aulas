@@ -1,0 +1,14 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+.center{text-align: center;}
+
+form, h3{
+    margin: auto;
+    width: 300px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    padding: 20px 0px 20px 0px;
+}

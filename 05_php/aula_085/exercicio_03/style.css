@@ -1,0 +1,26 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: "Ink Free";
+}
+
+.center{text-align: center;}
+
+.caixa{
+    margin: 15px auto;
+    width: 500px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+form, a{margin-bottom: 15px;}
+
+a{
+    font-family: initial;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid gray;
+    padding: 0px 5px;
+}
