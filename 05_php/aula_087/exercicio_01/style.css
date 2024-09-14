@@ -1,0 +1,49 @@
+body{
+    color: lawngreen;
+    background-color: black;
+    font-family: "Ink Free";
+    overflow-x: hidden;
+}
+
+.center{text-align: center;}
+
+.caixa{
+    margin: 15px auto;
+    width: 500px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+form, a{margin-bottom: 15px;}
+
+h3{
+    color: red;
+    font-size: 50px;
+}
+
+#position_peso{
+    position: relative;
+    top: 90px;
+    right: 125px;
+}
+#position_preco{
+    position: relative;
+    top: 60px;
+    right: 110px;
+}
+#position_total{
+    position: relative;
+    top: 30px;
+    right: 90px;
+}
+
+#exit{
+    margin: auto;
+    background-image: url("balanca.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 656px;
+    height: 434px;
+}

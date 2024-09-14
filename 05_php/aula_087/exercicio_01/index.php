@@ -9,7 +9,7 @@ $form = isset($_GET["preco"]) && isset($_GET["peso"]);
 if($form){
     $peso = floatval($_GET["peso"]);
     $preco = floatval($_GET["preco"]);
-    $total = number_format($preco * $peso, 2);
+    $total = $preco * $peso;
 }
 
 ?>
@@ -19,7 +19,7 @@ if($form){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 86.3</title>
+    <title>Exercício 87.1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="center">
@@ -37,9 +37,21 @@ if($form){
     <div class="caixa">
         
         <form action="">
-            <input class="center" type="number" name="peso" placeholder="PESO" autofocus required step="0.001" min="0" value="<?= $peso; ?>">
-            <input class="center" type="number" name="preco" placeholder="PREÇO/KG" autofocus required step="0.01" min="0" value="<?= $preco; ?>">
-            <input type="submit" value="CALCULAR">
+
+            <?php if($form): ?>
+
+                <input class="center" type="number" name="peso" placeholder="PESO" autofocus required step="0.001" min="0" value="<?= $peso; ?>">
+                <input class="center" type="number" name="preco" placeholder="PREÇO/KG" autofocus required step="0.01" min="0" value="<?= $preco; ?>">
+                <input type="submit" value="CALCULAR">
+
+            <?php else: ?>
+
+                <input class="center" type="number" name="peso" placeholder="PESO" autofocus required step="0.001" min="0">
+                <input class="center" type="number" name="preco" placeholder="PREÇO/KG" autofocus required step="0.01" min="0">
+                <input type="submit" value="CALCULAR">
+
+            <?php endif; ?>
+
         </form>
         
         <a href="index.php"><button>RESET</button></a>

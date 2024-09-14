@@ -1,0 +1,24 @@
+body{
+    color: gold;
+    background-color: black;
+    font-family: "Ink Free";
+    font-weight: bold;
+}
+
+.center, input{text-align: center;}
+
+.caixa{
+    border: 1px solid white;
+    margin: 15px auto;
+    width: 500px;
+    background-color: rgba(107, 107, 107, 0.2);
+    border-radius: 10px;
+    padding: 20px 0px 20px 0px;
+}
+
+
+#edit_form{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
