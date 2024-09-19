@@ -20,6 +20,11 @@ if($form){
 
     <h1>ÚLTIMOS LIVROS</h1>
 
+    <!-- <?php if(!$form): ?> A exclamação na frente é para dizer se for falso, ou seja, se não for verificado.
+        <h1>Preencha o formuário da página anterior!</h1>
+        <a href="index.php"><button>Voltar</button></a>
+        <?php endif; ?> -->
+
     <?php if($form): ?>
 
         <?php for($i = 1; $i<=$numero; $i += 1): ?>
