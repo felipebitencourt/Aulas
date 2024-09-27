@@ -1,0 +1,7 @@
+body{
+    font-family: 'lucida calligraphy';
+    margin: auto;
+}
+
+img{height: 420px;}
+.card-body{background-color: rgba(0, 0, 0, 0.05);}

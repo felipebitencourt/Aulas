@@ -1,0 +1,33 @@
+body{
+    font-family: 'lucida calligraphy';
+    color: rgb(0, 255, 0);
+    background-color: black;
+    
+}
+
+.center{text-align: center;}
+
+.caixa{
+    border: 1px solid white;
+    background-color: rgba(187, 180, 180, 0.432);
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+}
+
+table, td, th, tr{
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin: auto;
+    width: 800PX;
+}
+
+.caixa_tb{
+    width: 60%;
+    padding: 20px;
+}
+
+.caixa pre{
+    text-align: left;
+    padding: 0px 10px;
+}

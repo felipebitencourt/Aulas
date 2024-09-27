@@ -1,12 +1,12 @@
 <?php
 
-$form = isset($_GET["total"]);
+$form = isset($_GET["total"]) && isset($_GET["data_1"]) && isset($_GET["recibo_1"]);
 
 if($form){
     $total = intval($_GET["total"]);
     $total_arrecadado = 0;
     for($i = 1; $i<=$total; $i += 1){
-        if(!isset($_GET["recibo_$i"])){
+        if(!isset($_GET["recibo_$i"]) && isset($_GET["data_$i"])){
             header("Location: index.php");
             exit();
         }
@@ -21,7 +21,6 @@ else{
 }
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -48,7 +47,7 @@ else{
             <tr>
                 <td> <?= $i; ?> </td>
                 <td> <?= number_format(floatval($_GET["recibo_$i"]), 2); ?> € </td>
-                <td> <?= $_GET["data"]; ?> </td>
+                <td> <?= date("d M Y", strtotime($_GET["data_$i"])); ?> </td>
             </tr>
 
         <?php endfor; ?>

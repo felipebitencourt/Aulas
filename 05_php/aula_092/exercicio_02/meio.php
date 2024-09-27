@@ -7,6 +7,7 @@ if($form){
 }
 else{
     header("Location: index.php");
+    exit();
 }
 
 ?>
@@ -30,7 +31,7 @@ else{
         <?php for($i = 1; $i <= $total; $i += 1): ?>
             <label for="recibo">Recibo <?= $i; ?>: </label>
             <input type="number" name="recibo_<?= $i; ?>" required placeholder = "Valor <?= $i; ?>" autofocus step=0.01 min="0.01">
-            <input type="date" name="data" id="data" required>
+            <input type="date" name="data_<?= $i; ?>" required>
             <br><br>
         <?php endfor; ?>
 

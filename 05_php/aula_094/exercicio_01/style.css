@@ -1,0 +1,16 @@
+body{
+    font-family: 'lucida calligraphy';
+    color: rgb(0, 255, 0);
+    background-color: black;
+    
+}
+
+.center{text-align: center;}
+
+.caixa{
+    background-color: rgba(187, 180, 180, 0.432);
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+    padding: 10px 0px;
+}

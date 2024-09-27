@@ -4,6 +4,10 @@ limpa()
 
 while(True):
     limpa()
+
+    for u in globais.usuarios: u.toString()
+
+    print()
     
     login_digitado = input("→ Login: ")
     senha_digitada = input("→ Senha: ")
