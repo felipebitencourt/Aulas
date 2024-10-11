@@ -27,23 +27,25 @@ require_once("globais.php");
 
             <div class="col-12 p-0">
 
-                <nav class="navbar navbar-expand-lg text-bg-danger">
+                <nav class="navbar navbar-expand-lg text-bg-danger navbar-dark">
 
                     <div class="container-fluid">
-                        <a class="navbar-brand text-bg-danger" href="#">Navbar</a>
+                        <a class="navbar-brand" href="#">FILMES</a>
+
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
                         </button>
+
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
 
                             <li class="nav-item">
-                            <a class="nav-link active text-bg-danger" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                             
                             <li class="nav-item dropdown">
 
-                                <a class="nav-link dropdown-toggle text-bg-danger" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Filmes
                                 </a>
 
@@ -63,7 +65,7 @@ require_once("globais.php");
 
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <button class="btn btn-outline-light" type="submit">Search</button>
                         </form>
 
                     </div>
@@ -154,11 +156,16 @@ require_once("globais.php");
                 <?php foreach($filmes as $f): ?>
 
                     <div class="card" style="width: 18rem;">
-                        <img src="<?= $f["imagem"]; ?>" class="card-img-top" alt="...">
+
+                        <img src="<?= $f["imagem"]; ?>" class="card-img-top" alt="<?= $f["titulo"]; ?>">
+
                         <div class="card-body">
                             <h5 class="card-title text-center"><?= $f["titulo"]; ?></h5>
-                            <p class="card-text"><?= $f["texto"]; ?></p>
+                            <p class="card-text">
+                                <?= substr($f["texto"], 0, 98); ?>...
+                            </p>
                         </div>
+
                     </div>
 
                 <?php endforeach; ?>
@@ -172,10 +179,9 @@ require_once("globais.php");
 
     <footer class="text-bg-danger p-3 text-center">
 
-        Felipe Bitencourt &copy; 2024
+        Felipe Bitencourt &copy; <?= date("Y"); ?>
 
     </footer>
-
     
 </body>
 </html>

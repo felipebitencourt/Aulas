@@ -1,0 +1,26 @@
+body{
+  max-width: 1280px;
+  margin: auto;
+}
+
+.carousel-item img{
+  object-fit: cover;
+  height: 50vw;
+  max-height: 600px;
+}
+.carousel-indicators button{
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  opacity: 1 !important;
+  background-color: transparent !important;
+  border: 3px solid white !important;
+  margin: 0px 15px !important;
+}
+.carousel-indicators button.active{background-color: white !important;}
+
+.imagem-principal{
+  width: 40vw;
+  max-width: 400px;
+  min-width: 150px;
+}

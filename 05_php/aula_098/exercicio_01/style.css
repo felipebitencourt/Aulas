@@ -1,0 +1,11 @@
+body{
+    font-family: 'lucida calligraphy';
+    margin: auto;
+}
+
+img{height: 420px;}
+
+.nav-link.active{
+    color: black !important;
+    font-weight: bold;
+}
