@@ -1,77 +1,41 @@
-@font-face {
-    font-family: 'Poppins';
-    src: url('fontes/fontes/Poppins-Regular.eot');
-    src: url('fontes/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fontes/Poppins-Regular.woff2') format('woff2'),
-        url('fontes/Poppins-Regular.woff') format('woff'),
-        url('fontes/Poppins-Regular.ttf') format('truetype'),
-        url('fontes/Poppins-Regular.svg#fontes/Poppins-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* @font-face {
-    font-family: 'Poppins Bold';
-    src: url('fontes/Poppins-Bold.eot');
-    src: url('fontes/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fontes/Poppins-Bold.woff2') format('woff2'),
-        url('fontes/Poppins-Bold.woff') format('woff'),
-        url('fontes/Poppins-Bold.ttf') format('truetype'),
-        url('fontes/Poppins-Bold.svg#fontes/Poppins-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins Light';
-    src: url('fontes/Poppins-Light.eot');
-    src: url('fontes/Poppins-Light.eot?#iefix') format('embedded-opentype'),
-        url('fontes/Poppins-Light.woff2') format('woff2'),
-        url('fontes/Poppins-Light.woff') format('woff'),
-        url('fontes/Poppins-Light.ttf') format('truetype'),
-        url('fontes/Poppins-Light.svg#fontes/Poppins-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins Medium';
-    src: url('fontes/Poppins-Medium.eot');
-    src: url('fontes/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fontes/Poppins-Medium.woff2') format('woff2'),
-        url('fontes/Poppins-Medium.woff') format('woff'),
-        url('fontes/Poppins-Medium.ttf') format('truetype'),
-        url('fontes/Poppins-Medium.svg#fontes/Poppins-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-} */
-
 body{
     color: #333333;
     font-family: 'Poppins';
     margin: auto;
     max-width: 1617px;
+    min-width: 377px;
+    overflow-x: hidden;
 }
 
-li a{
+.nav-link{
     color: #333333 !important;
     font-size: 16px;
-    border-bottom: 5px solid rgba(0, 0, 0, 0) !important;
+    font-family: 'Poppins Medium';
+    border-bottom: 5px solid transparent !important;
 }
 
-li a:hover{
-    transition: 0.35s ease-in;
-    border-bottom: 5px solid black !important;
+.dropdown-item{border: none !important;}
+
+.nav-link:hover{
+    transition: ease-in-out 0.5s;
+    border-bottom: 5px solid #333333 !important;
 }
 
 .carousel-item img{
-    width: 1600px;
-    height: 600px;
+    min-width: 576px;
+    min-height: 255px;
     object-fit: cover;
+}
+
+.sombra_carousel::after{
+    border-top: 1px solid rgba(51, 51, 51, 0.75);
+    box-shadow: 0px 5px 15px rgba(51, 51, 51, 0.75) inset;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-indicators button.active{background-color: #F9963B !important;}
@@ -80,10 +44,115 @@ li a:hover{
     opacity: 100;
     height: 13px;
     width: 71px;
+    margin-bottom: 15px;
 }
 
-#barra{
+/* BREAKPOINT BUTTONS CAROUSEL */
+
+@media (max-width: 768px){
+    #carouselExampleIndicators .carousel-indicators button, #carouselExampleCaptions .carousel-indicators button{
+        height: 5px;
+        width: 30px;
+        margin-bottom: -10px;
+    }
+    #logo{width: 200px;}
+}
+
+@media (max-width: 1235px){
+    li a{font-size: 12px !important;}
+}
+
+@media (max-width: 576px){
+    #carrossel{margin-top: 0px !important;}
+}
+
+#carrossel{margin-top: -30px;}
+
+.barra{
     width: 78px;
     height: 52px;
     border-bottom: 3px solid #F9963B;
+}
+
+.titulo{font-size: 38px;}
+.texto{font-size: 18px;}
+.texto_card{margin-bottom: 12px !important;}
+.titulo_card{
+    margin-top: 20px !important;
+    margin-bottom: 5px !important;
+    font-size: 25px;
+}
+
+.modelo_1{
+    width: 194px;
+    height: 46px;
+}
+
+.modelo_2{
+    width: 128px;
+    height: 36px;
+    font-size: 12px;
+    position: relative;
+    top: 18px;
+}
+
+.ver_mais{
+    background-color: white;
+    border-radius: 30px;
+}
+
+.img_card{
+    height: 255px;
+    object-fit: cover;
+}
+.card_interno{padding: 0px 26px;}
+.dimensao_card{
+    width: 350px;
+    height: 471px;
+    margin-right: 30px !important;
+    margin-bottom: 30px;
+    border-top: none !important;
+}
+
+.ajuste_bem_vindo{padding: 0px 150px;}
+.ajuste_nav{margin-bottom: -24px;}
+
+.home_contactos{
+    height: 565px;
+    background-image: url("imagens/footer_contactos.png");
+}
+
+.home_contactos, .home_siga{
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.home_contactos::before, .home_siga::before{
+    backdrop-filter: brightness(40%);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1
+}
+
+.texto_contactos{font-size: 25px;}
+.home_contactos .barra{margin-top: 80px !important;}
+.texto_siga{
+    font-family: 'Poppins Light';
+    font-size: 29px;
+}
+.home_contactos .titulo{
+    font-size: 43px;
+    margin-top: -50px;
+    font-family: 'Poppins';
+}
+
+.margin_mapa{margin: 30px 0px;}
+.margin_face{margin: 85px;}
+
+.home_siga{
+    height: 476px;
+    background-image: url("imagens/footer_facebook.png");
 }
