@@ -1,0 +1,209 @@
+/* ------------------------------------------------ BREAKPOINTS ------------------------------------------------ */
+/* 
+@media (max-width: 768px){
+    #carouselExampleIndicators .carousel-indicators button, #carouselExampleCaptions .carousel-indicators button{
+        height: 5px;
+        width: 30px;
+        margin-bottom: -10px;
+    }
+    #logo{width: 200px;}
+}
+
+@media (max-width: 1235px){li a{font-size: 12px !important;}}
+@media (max-width: 576px){#carrossel{margin-top: 0px !important;}} */
+
+body{
+    color: #333333;
+    font-family: 'Poppins';
+    margin: auto;
+    max-width: 1617px;
+    min-width: 377px;
+    overflow-x: hidden;
+}
+
+.navbar_header .nav-link{
+    color: #333333 !important;
+    font-size: 16px;
+    font-family: 'Poppins Medium';
+    border-bottom: 5px solid transparent !important;
+}
+
+.carousel-item img{
+    min-width: 576px;
+    min-height: 255px;
+    object-fit: cover;
+}
+
+.sombra_carousel::after{
+    border-top: 1px solid rgba(51, 51, 51, 0.75);
+    box-shadow: 0px 5px 15px rgba(51, 51, 51, 0.75) inset;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-divider{border-top: 3px solid rgba(255, 255, 255, 0.25);}
+
+.dropdown-menu{
+    border-radius: 0px;
+    background-color: rgba(51, 51, 51, 0.91);
+}
+
+.dropdown-menu .nav-link{
+    color: white !important;
+    width: 260px;
+    border: none !important;
+}
+
+.carousel-indicators button.active{background-color: #F9963B !important;}
+#carouselExampleIndicators .carousel-indicators button, #carouselExampleCaptions .carousel-indicators button{
+    background-color: white;
+    opacity: 100;
+    height: 13px;
+    width: 71px;
+    margin-bottom: 15px;
+}
+
+.barra{
+    width: 78px;
+    height: 52px;
+    border-bottom: 3px solid #F9963B;
+}
+
+.titulo_card{
+    margin-top: 20px !important;
+    margin-bottom: 5px !important;
+    font-size: 25px;
+}
+
+.modelo_1{
+    width: 194px;
+    height: 46px;
+}
+
+.modelo_2{
+    width: 128px;
+    height: 36px;
+    font-size: 12px;
+    position: relative;
+    top: 18px;
+}
+
+.ver_mais{
+    background-color: white;
+    border-radius: 30px;
+}
+
+.img_card{
+    height: 255px;
+    object-fit: cover;
+}
+
+.dimensao_card{
+    width: 350px;
+    height: 471px;
+    margin: 0px 30px 30px 0px !important;
+    border-top: none !important;
+}
+
+.home_contactos{
+    height: 565px;
+    background-image: url("imagens/footer_contactos.png");
+}
+
+.home_contactos, .home_siga{
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.home_contactos::before, .home_siga::before{
+    backdrop-filter: brightness(40%);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1
+}
+
+.home_contactos .titulo{
+    font-size: 43px;
+    margin-top: -50px;
+    font-family: 'Poppins';
+}
+
+.home_siga{
+    height: 476px;
+    background-image: url("imagens/footer_facebook.png");
+}
+
+.barra_siga{
+    border-top: 2px solid rgb(255, 255, 255);
+    opacity: 100%;
+    margin-top: 27px !important;
+}
+
+.navbar_footer .nav-link{
+    color: white !important;
+    font-weight: 100 !important;
+}
+
+footer .copyright{
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: light;
+    margin-left: 245px;
+}
+
+/* -------------- FONTS -------------- */
+
+.font_light{font-family: 'Poppins Light' !important;}
+.titulo{font-size: 38px;}
+.texto{font-size: 18px;}
+.texto_siga{font-size: 29px;}
+.texto_contactos{font-size: 24px;}
+.navbar_footer .nav-link, footer .copyright{font-size: 15px;}
+
+
+/* -------------- AJUSTES (MARGINS E PADDINGS) -------------- */
+
+.texto_card{margin-bottom: 12px !important;}
+.card_interno{padding: 0px 26px;}
+.margin_bt{margin-bottom: 3px !important;}
+.margin_bt_resp{margin-bottom: 30px !important;}
+#margin_p_card{margin-bottom: 14px !important;}
+#carrossel{margin-top: -30px;}
+
+.home_contactos .barra{margin-top: 80px !important;}
+.ajuste_bem_vindo{padding: 0px 150px;}
+.ajuste_nav{margin-bottom: -24px;}
+
+.margin_mapa{margin: 30px 0px 15px 0px;}
+.margin_face{margin: 85px;}
+
+.navbar_footer{
+    margin-top: 15px;
+    margin-right: 230px;
+}
+
+/* -------------------------- HOVERS ------------------------ */
+
+.navbar_header .nav-link:hover{
+    transition: ease-in-out 0.5s;
+    border-bottom: 5px solid #333333 !important;
+}
+
+.dropdown-menu .nav-link:hover{
+    border: none !important;
+    font-family: 'Poppins Bold' !important;
+    font-size: 17px;
+}
+
+.ver_mais:hover{
+    background-color: black;
+    color: white;
+}
+
+.navbar_footer .nav-link:hover, .navbar_footer .nav-link.active{color: #F9963B !important;}

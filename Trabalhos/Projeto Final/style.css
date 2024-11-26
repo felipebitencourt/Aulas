@@ -197,7 +197,7 @@ footer .copyright{
 
 .dropdown-menu .nav-link:hover{
     border: none !important;
-    font-family: 'Poppins Bold';
+    font-family: 'Poppins Bold' !important;
     font-size: 17px;
 }
 
@@ -206,6 +206,4 @@ footer .copyright{
     color: white;
 }
 
-.navbar_footer .nav-link:hover, .navbar_footer .nav-link.active{
-    color: #F9963B !important;
-}
+.navbar_footer .nav-link:hover, .navbar_footer .nav-link.active{color: #F9963B !important;}
