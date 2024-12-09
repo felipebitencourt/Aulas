@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(175, 175, 175);
+    margin: auto;
+    text-align: center;
+}
+
+.caixa{
+    width: 50%;
+    background-color: rgba(207, 207, 207, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgb(73, 73, 73);
+    margin: auto;
+}
+
+.interno{
+    border: 2px dashed white;
+    border-radius: 15px;
+    width: auto;
+    display: inline-block;
+    padding: 25px;
+    margin-right: 50px;
+    color: white;
+}
+
+button{cursor: pointer;}
+#vermelho{background-color: red;}
+#verde{background-color: green;}
+#azul{background-color: blue;}

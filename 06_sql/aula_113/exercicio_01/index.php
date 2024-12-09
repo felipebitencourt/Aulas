@@ -11,7 +11,7 @@ $produtos = selectSQL("SELECT * FROM produtos");
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercício 111.2</title>
+  <title>Exercício 113.1</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -39,8 +39,7 @@ $produtos = selectSQL("SELECT * FROM produtos");
                     <td><?= $p["nome"]; ?></td>
                     <td><?= number_format($p["preco"], 2, ","); ?> €</td>
                     <td><?= $p["quantidade"]; ?></td>
-                    <td><button name="deletar" value="<?= $p["id"]; ?>" type="submit">X</button></td>
-                    <input type="hidden" name="nome" value="<?= $p["nome"]; ?>">
+                    <td><button name="editar" value="<?= $p["id"]; ?>" type="submit">Editar</button></td>
                 </tr>
 
             </form>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 134.1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <h1>Clínica de Nutrição</h1>
+
+    <div class="caixa">
+
+        <form onsubmit="calcularIMC(event)">
+
+            <label for="nome"> Digite o nome do(a) paciente: </label>
+            <input type="text" name="nome" id="nome" required autofocus>
+
+            <br>
+
+            <label for="peso"> Digite o peso (Kg) do(a) paciente: </label>
+            <input type="number" name="peso" id="peso" required min="0.01" step="0.01">
+
+            <br>
+
+            <label for="altura"> Digite o altura (m) do(a) paciente: </label>
+            <input type="number" name="altura" id="altura" required min="0.01" step="0.01">
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+
+            <!-- <button type="button" onclick="limpar()">Reset</button> -->
+
+        </form>
+
+    </div>
+
+    <br><br>
+
+    <div class="caixa" id="saida"></div>
+
+
+</body>
+</html>

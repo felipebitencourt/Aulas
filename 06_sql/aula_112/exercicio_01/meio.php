@@ -10,7 +10,10 @@ if($form){
     $id = intval($_GET["deletar"]);
     $nome = $_GET["nome"];
 }
-
+else{
+    header("Location: index.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>

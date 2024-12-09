@@ -1,0 +1,45 @@
+body{
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.caixa{
+    width: 50%;
+    background-color: rgba(17, 0, 252, 0.185);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgb(0, 204, 255);
+    margin: auto;
+}
+
+#calculadora{
+    width: 300px;
+    padding: 10px;
+}
+
+#tela{
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    color: red;
+    padding: 14px;
+    height: 60px;
+    font-size: 30px;
+    box-sizing: border-box;
+    
+}
+
+#buttons button{
+    padding: 5px 15px;
+    font-size: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0);
+}
+
+#tela div{display: inline-block;}
+#saida{text-shadow: 0.1em 0.1em 0.2em black}

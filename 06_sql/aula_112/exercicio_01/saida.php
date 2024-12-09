@@ -13,6 +13,7 @@ if($form){
 
     if($certeza == "nao"){
         header("Location: index.php");
+        exit();
     }
     else{
         iduSQL("DELETE FROM produtos WHERE id=$id");

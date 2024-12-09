@@ -1,0 +1,50 @@
+body{
+  background-image: url("nokron.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Kristen ITC';
+  text-align: center;
+}
+
+/* .caixa{
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 2px solid white;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 20px;
+} */
+
+input{text-align: center;}
+.table_2{width: 60%;}
+
+table{
+  width: 65%;
+  margin: auto;
+}
+
+table, th, td{
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+th, td{padding: 10px;}
+
+th{
+  text-transform: uppercase;
+  color: rgb(0, 255, 0);
+}
+
+pre{text-align: left;}
+
+.navbars{background-color: #9461fb;}
+a.active{color: white !important;}
+
+button, input[type=submit]{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}

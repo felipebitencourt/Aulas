@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: goldenrod;
+    margin: auto;
+    text-align: center;
+}
+
+.caixa{
+    width: 80%;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px white;
+    margin: auto;
+}

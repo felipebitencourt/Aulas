@@ -1,0 +1,37 @@
+/* html{scroll-behavior: smooth;} */
+
+body{
+    background-color: black;
+    margin: 0 auto;
+    color: goldenrod;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.caixa{
+    width: 50%;
+    background-color: black;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgb(0, 255, 13);
+    margin: auto;
+}
+
+#saida{
+    text-shadow: 0.1vw 0.1vw 0.2vw rgb(7, 12, 61);
+}
+
+table{width: 75%;}
+th{color: aquamarine;}
+td{color: white;}
+
+table, th, td{
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid white;
+    margin: auto;
+}
+
+th, td{padding: 10px;}
+
+.d-none{display: none;}

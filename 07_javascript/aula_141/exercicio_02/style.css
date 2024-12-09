@@ -1,0 +1,77 @@
+html{scroll-behavior: smooth;}
+#saida{text-shadow: 0.1vw 0.1vw 0.2vw rgb(7, 12, 61)}
+
+body{
+    background-color: rgba(0, 0, 0);
+    margin: 0 auto;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.caixa{
+    width: 50%;
+    background-color: rgba(17, 0, 252, 0.185);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgb(0, 204, 255);
+    margin: auto;
+}
+
+.barra{
+    width: 100%;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#horas{background-color: red;}
+#minutos{background-color: greenyellow;}
+#segundos{background-color: blue;}
+#milisegundos{background-color: aqua;}
+
+#relogio{
+    background-image: url('relogio.png');
+    background-position: center;
+    background-size: 125%;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ponteiro{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    position: absolute;
+    transform-origin: center left;
+    transform: translateX(75px) rotate(-90deg);
+    background-image: url('ponteiro_2-removebg-preview.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .sombra{box-shadow: 2px 2px 4px black;} */
+
+#ponteiro_horas{
+    /* background-image: url('ponteiro_2.png'); */
+    background-size: cover;
+    /* background-color: red; */
+    width: 100px;
+}
+#ponteiro_minutos{
+    background-size: 95%;
+    /* background-color: green; */
+    /* background-image: url('ponteiro_2.png'); */
+}
+#ponteiro_segundos{
+    background-size: 108%;
+    /* background-image: url('ponteiro_2.png'); */
+    /* background-color: blue; */
+}

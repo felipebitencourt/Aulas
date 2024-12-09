@@ -1,0 +1,35 @@
+body{
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.caixa{
+    width: 50%;
+    background-color: rgba(17, 0, 252, 0.185);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgb(0, 204, 255);
+    margin: auto;
+}
+
+.especial{
+    font-size: 20px;
+    transform: rotateX(30deg);
+    border: 2px solid white;
+    background-color: red;
+}
+
+.teste{
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.depois{
+    background-color: greenyellow;
+    font-weight: bold;
+}
