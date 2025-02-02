@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Ink Free';
+    font-weight: bold;
+}
+
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th, td{padding: 15px;}
+
+input{
+    width: 450px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.active{
+    color: white !important;
+    font-weight: bold;
+}
+
+td:first-child{font-weight: bold;}
+th{color: rgb(0, 255, 0);}
+
+@font-face{
+    font-family: "Ink Free";
+    src: url("public/Inkfree.ttf");
+}

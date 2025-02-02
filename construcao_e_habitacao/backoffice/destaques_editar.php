@@ -1,0 +1,187 @@
+<?php
+
+require_once("../requisitos.php");
+
+if(!verificarLogin()){
+    header("Location: index.php");
+    exit();
+}
+
+$form = !empty($_GET["editar"]);
+
+if($form){
+
+    $id =  $_GET["editar"];
+    $destaque_especifico = selectSQLUnico("SELECT * FROM destaques WHERE id=$id");
+    $form_2 = !empty($_GET["titulo"]) && !empty($_GET["imagem"]) && !empty($_GET["texto"]) && isset($_GET["esta_na_home"]);
+
+    if($form_2){
+        $titulo = $_GET["titulo"];
+        $imagem = $_GET["imagem"];
+        $texto = $_GET["texto"];
+        $esta_na_home = $_GET["esta_na_home"];
+    
+        iduSQL("UPDATE destaques SET titulo='$titulo', imagem='$imagem', texto='$texto', esta_na_home=$esta_na_home WHERE id=$id");
+        header("Location: destaques.php");
+        exit();
+    }
+
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backoffice</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- EDITOR DE TEXTO -->
+    <script src="https://cdn.tiny.cloud/1/5z7av92t5br6bsn1ajdi3rum9s2wwjxjlu8och48b46zfa4v/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="public/css/style.css">
+
+</head>
+<body>
+
+    <header class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12 px-0">
+
+                <nav class="navbar navbar-expand-lg bg-info">
+
+                    <div class="container-fluid">
+
+                        <a class="navbar-brand" href="home.php">Backoffice</a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="home.php">Home</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Menu Simples
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="menu_simples.php?pagina=quem_somos">Quem Somos</a></li>
+                                            <li><a class="dropdown-item" href="menu_simples.php?pagina=socios">Sócios</a></li>
+                                            <li><a class="dropdown-item" href="menu_simples.php?pagina=centro_ferias">Centro de Férias</a></li>
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="noticias.php">Notícias</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="destaques.php">Destaques</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="empreendimentos.php">Empreendimentos</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contactos.php">Contactos</a>
+                                    </li>
+
+                                </ul>
+
+                                <button class="btn btn-outline-dark"><a class="nav-link" href="logout.php">Logout</a></button>
+                                
+                            </div>
+
+                    </div>
+                    
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="container text-center py-5">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <h1>Editar Destaque</h1>
+                <h4><?= $destaque_especifico["titulo"]; ?></h4>
+            
+            </div>
+
+        </div>
+
+        <form class="row">
+
+            <input type="hidden" name="editar" value="<?= $id; ?>">
+
+            <div class="col-12 my-3">
+
+                <label for="titulo">Título: </label>
+                <input type="text" name="titulo" id="titulo" value="<?= $destaque_especifico["titulo"]; ?>">
+
+            </div>
+
+            <div class="col-12">
+
+                <label for="imagem">Imagem: </label>
+                <input type="text" name="imagem" id="imagem" value="<?= $destaque_especifico["imagem"]; ?>">
+                <button class="btn btn-outline-warning my-3"><a class="text-decoration-none text-black" href="../tinyfilemanager/tinyfilemanager.php" target="_blank">Gestor de Ficheiros</a></button>
+
+            </div>
+
+            <div class="col-12 my-3">
+
+                <label for="esta_na_home">Estará na homepage? </label>
+                <select name="esta_na_home" id="esta_na_home">
+                    <option value="1" <?= ($destaque_especifico["esta_na_home"]) ? "selected" : ""; ?>>Sim</option>
+                    <option value="0" <?= (!$destaque_especifico["esta_na_home"]) ? "selected" : ""; ?>>Não</option>
+                </select>
+
+            </div>
+
+            <div class="col-12 mt-3">
+
+                <label for="texto">Texto: </label>
+                <textarea name="texto" id="texto" rows="25" cols="150"><?= $destaque_especifico["texto"]; ?></textarea>
+
+                <script>
+                    tinymce.init({
+                    selector: '#texto'
+                    });
+                </script>
+            
+            </div>
+
+            <div class="col-12 mt-3">
+
+                <button class="btn btn-outline-success">Salvar</button>
+                
+            </div>
+
+        </form>
+
+    </main>
+    
+</body>
+</html>
